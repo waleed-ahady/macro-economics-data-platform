@@ -1,0 +1,104 @@
+countries:
+  - {code: USA, name: United States}
+  - {code: DEU, name: Germany}
+  - {code: FRA, name: France}
+  - {code: GBR, name: United Kingdom}
+  - {code: ITA, name: Italy}
+  - {code: ESP, name: Spain}
+  - {code: JPN, name: Japan}
+  - {code: CHN, name: China}
+  - {code: IND, name: India}
+  - {code: BRA, name: Brazil}
+  - {code: CAN, name: Canada}
+  - {code: AUS, name: Australia}
+  - {code: KOR, name: South Korea}
+  - {code: MEX, name: Mexico}
+
+indicators:
+  - code: gdp_growth
+    provider_id: NY.GDP.MKTP.KD.ZG
+    display_name: Real GDP Growth
+    category: growth
+    units: Percent
+    start_year: 1990
+    description: Annual percentage growth rate of GDP at market prices based on constant local currency.
+
+  - code: gdp_current_usd
+    provider_id: NY.GDP.MKTP.CD
+    display_name: GDP
+    category: growth
+    units: Current US dollars
+    start_year: 1990
+    description: Gross domestic product measured in current US dollars.
+
+  - code: gdp_per_capita
+    provider_id: NY.GDP.PCAP.CD
+    display_name: GDP per Capita
+    category: growth
+    units: Current US dollars
+    start_year: 1990
+    description: Gross domestic product divided by midyear population.
+
+  - code: inflation
+    provider_id: FP.CPI.TOTL.ZG
+    display_name: Consumer Price Inflation
+    category: prices
+    units: Percent
+    start_year: 1990
+    description: Annual percentage change in the consumer price index.
+
+  - code: unemployment_rate
+    provider_id: SL.UEM.TOTL.ZS
+    display_name: Unemployment Rate
+    category: labor
+    units: Percent of labor force
+    start_year: 1991
+    description: Share of the labor force without work but available for and seeking employment.
+
+  - code: current_account_balance
+    provider_id: BN.CAB.XOKA.GD.ZS
+    display_name: Current Account Balance
+    category: external_sector
+    units: Percent of GDP
+    start_year: 1990
+    description: Current account balance as a percentage of GDP.
+
+  - code: trade_openness
+    provider_id: NE.TRD.GNFS.ZS
+    display_name: Trade Openness
+    category: external_sector
+    units: Percent of GDP
+    start_year: 1990
+    description: Sum of exports and imports of goods and services measured as a share of GDP.
+
+  - code: exports_share_gdp
+    provider_id: NE.EXP.GNFS.ZS
+    display_name: Exports of Goods and Services
+    category: external_sector
+    units: Percent of GDP
+    start_year: 1990
+    description: Exports of goods and services as a percentage of GDP.
+
+  - code: imports_share_gdp
+    provider_id: NE.IMP.GNFS.ZS
+    display_name: Imports of Goods and Services
+    category: external_sector
+    units: Percent of GDP
+    start_year: 1990
+    description: Imports of goods and services as a percentage of GDP.
+
+  - code: gross_capital_formation
+    provider_id: NE.GDI.TOTL.ZS
+    display_name: Gross Capital Formation
+    category: investment
+    units: Percent of GDP
+    start_year: 1990
+    description: Investment in fixed assets and changes in inventories measured as a share of GDP.
+
+  - code: population
+    provider_id: SP.POP.TOTL
+    display_name: Population
+    category: demographics
+    units: People
+    start_year: 1990
+    description: Total population based on the de facto definition of population.

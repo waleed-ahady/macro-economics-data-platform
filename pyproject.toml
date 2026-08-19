@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macro-economics-data-platform"
+version = "0.3.1"
+description = "A production-oriented platform for ingesting, standardizing, comparing, and serving multi-country macroeconomic data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["macroeconomics", "world-bank", "data-engineering", "fastapi", "postgresql"]
+dependencies = [
+  "alembic>=1.14,<2",
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "pandas>=2.2,<3",
+  "pydantic-settings>=2.6,<3",
+  "PyYAML>=6,<7",
+  "SQLAlchemy>=2.0,<3",
+  "typer>=0.15,<1",
+  "uvicorn[standard]>=0.32,<1",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg[binary]>=3.2,<4"]
+dashboard = [
+  "streamlit>=1.40,<2",
+  "plotly>=5.24,<7",
+]
+dev = [
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.8,<1",
+]
+
+[project.scripts]
+macro-data = "macro_data_platform.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --disable-warnings --strict-markers"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
