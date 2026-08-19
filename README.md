@@ -14,7 +14,7 @@ The dashboard is built around common macroeconomic questions: how countries comp
 
 The Global Snapshot provides a quick cross-country view of a selected indicator. Economies are ranked using their latest available observation, with the corresponding reporting year shown explicitly.
 
-![Global snapshot](docs/images/global-snapshot.png)
+![Global snapshot](docs/global-snapshot.png)
 
 This is useful for questions such as:
 
@@ -27,7 +27,7 @@ This is useful for questions such as:
 
 The Country Profile focuses on a single economy and brings together its main macroeconomic indicators.
 
-![Country profile](docs/images/country-profile.png)
+![Country profile](docs/country-profile.png)
 
 It provides a compact view of indicators such as GDP growth, inflation, unemployment, and GDP per capita, together with historical series that make it easier to understand how the economy has evolved.
 
@@ -35,7 +35,7 @@ It provides a compact view of indicators such as GDP growth, inflation, unemploy
 
 The comparison view makes it possible to follow the same indicator across multiple countries over time.
 
-![Compare economies](docs/images/compare-economies.png)
+![Compare economies](docs/compare-economies.png)
 
 Users can compare reported values directly or apply simple analytical transformations such as annual differences and rolling z-scores. This makes the page useful both for level comparisons and for identifying periods in which countries moved unusually far from their own historical patterns.
 
@@ -43,7 +43,7 @@ Users can compare reported values directly or apply simple analytical transforma
 
 The Indicator Relationships page compares two macroeconomic indicators across countries for a selected year.
 
-![Indicator relationships](docs/images/indicator-relationships.png)
+![Indicator relationships](docs/indicator-relationships.png)
 
 For example, it can be used to explore relationships between:
 
